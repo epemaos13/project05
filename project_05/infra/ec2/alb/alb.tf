@@ -9,7 +9,7 @@ resource "aws_lb" "example" {
 }
 
 // 로드밸런스 리스너 - jenkins
-resource "aws_lb_listener" "jenkins_http" {
+resource "aws_lb_listener" "http" {
   load_balancer_arn = aws_lb.example.arn
   port              = 80
   protocol          = "HTTP"
